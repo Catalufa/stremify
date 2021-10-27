@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Authentication Required"
+AuthUserFile "C:\xampp\htdocs\.htpasswd"
+Require valid-user

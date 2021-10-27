@@ -1,0 +1,15 @@
+<iframe id="player" style="position: fixed; width: 100%; height: 100%; border: 0;" allowfullscreen src=""></iframe>
+
+<script>
+function watch() {
+	top.Swal.close();
+	top.document.getElementById("watch").style.display = "block";
+	top.document.getElementById('close').style.display = 'block';
+	if (typeof sources === 'undefined') {
+		top.Swal.fire("Whoops!","This show is currently unavailable on Stremify. Check back soon!","error");
+		top.document.getElementById("close").click();
+	} else {
+		document.getElementById("player").src = sources[1];
+	};
+}
+</script>
